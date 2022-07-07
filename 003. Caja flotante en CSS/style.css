@@ -9,10 +9,30 @@ body{
 }
 
 .container {
-    width: 98vw;
-    height: 20vh;
-    background-color: #fff;
+    margin: 10px;
     color: black;
-    margin: auto;
-    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.btnA{
+    padding: 5px;
+    margin: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.btnB{
+    padding: 5px;
+    margin: 15px;
+    background-color: #bbb9b9;
+    color: white;
+    border: none;
+}
+
+.container p {
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
 }
