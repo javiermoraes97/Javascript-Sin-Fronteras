@@ -41,6 +41,8 @@ Primeras notas de css
 - Opacity = recibe una valor de 0 a 1 donde 1 es solido y 0 es invisible
 - Cursor = Sirve para cambiar el cursor en el sitio con pointer
 - Background = puede ser imagenes patrones y otras cosas mas
+- Box shadow = \(Abajo Derecha Blur color"Usar rgba") Sirve para crear las sombras en un elemento, y si le colocas \<inset> podras ver las sombras internas que da una sensacion de hundido
+- Text Shadow = usa los mismos parametros que box shadow pero en este caso es para el texto
 
 ## Tablas
 - Este tema es mas de html pero 
@@ -56,7 +58,30 @@ Primeras notas de css
 - \<tr> Crea las filas
 - \<td> Crea las columnas o celdas del tr
 
-## etiquetas html que son bloques
+## Transform en 2 dimensiones
+
+-\<transform> Sirve para cambiar la direccion, rotacion y desplazamiento del elemento.
+    - Rotate = \(gira el elemento 20deg)
+    - Translate = \(Eje x, Eje Y)
+    - Scale = \(Eje x, Eje y)
+    - Skew = \(Eje x, Eje y) Sirve para retorcer
+
+## Transform en 3 dimensiones
+
+-\<transform> Sirve para cambiar la direccion, rotacion y desplazamiento del elemento pero ahora en 3 dimensiones tambien. Pero tambien hay que indicarle el eje donde uno quiere que gire
+    - Rotate = \(Eje x, Eje Y , Eje z)
+    - Translate = \(Eje x, Eje Y , Eje z)
+    - Scale = \(Eje x, Eje Y , Eje z)
+    - Skew = \(Eje x, Eje Y , Eje z) Sirve para retorcer
+
+## Transiciones animadas
+
+-\<transition> Transiciones de una valor a otro de manera suave.
+- Transition = width 0.3s ease
+- transitio-delay = retrasa la animacion en cuanto necesitemos
+- :hover = 150px
+
+## Etiquetas html que son bloques
 - \<p>
 - \<div>
 - \<h1>
@@ -65,7 +90,7 @@ Primeras notas de css
 - \<footer>
 - \<section>
 
-## etiquetas html que son inline
+## Etiquetas html que son inline
 - \<span>
 - \<links>
 - \<img>
