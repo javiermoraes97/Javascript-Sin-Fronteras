@@ -1,31 +1,22 @@
 const express = require ('express')
+const user = require('./user.controller')
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-    res.status(200).send('Chanchito Feliz')
+app.get('/', user.list)
+app.post('/', user.create) 
+app.get('/:id', user.get)
+app.put('/:id', user.update)
+app.patch('/:id', user.update)
+app.delete('/:id', user.destroy)
+
+
+app.get('*', (req, res) => {
+    res.status(404).send('Esta pagina no existe')
 })
 
-app.post('/', (req, res)=> {
-    res.status(201).send('creando chanchito')
-}) 
-
-app.get('/:id', (req, res) =>{
-    console.log(req)
-    res.status(200).send(req.params)
-})
-
-app.put('/:id', (req, res) =>{
-    console.log(req)
-    res.sendStatus(204)
-})
-
-app.patch('/:id', (req, res) =>{
-    res.sendStatus(204)
-})
-
-app.delete('/:id', (req, res) =>{
-    res.sendStatus(204)
+app.post('*', (req, res) => {
+    res.status(404).send('Esta pagina no existe')
 })
 
 app.listen(port, () => {
@@ -37,5 +28,6 @@ app.listen(port, () => {
 // 201 Ok y que fue creado
 // 204 Ok y que no tiene contenido (put, patch, delete)
 
+// Refactorizar los end points la forma mas facil es crear modulos con un nuevo archivo
 
-// Refatorizar los end points la forma mas facil es crear modulos con un nuevo archivo
+// Capturar todas las peticiones
