@@ -36,3 +36,6 @@ app.listen(port, () => {
 // 200 Ok y tambien envia datos como objetos, Arrays, strings y otros tipos de datos
 // 201 Ok y que fue creado
 // 204 Ok y que no tiene contenido (put, patch, delete)
+
+
+// Refatorizar los end points la forma mas facil es crear modulos con un nuevo archivo
