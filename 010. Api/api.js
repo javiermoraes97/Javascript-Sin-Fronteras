@@ -10,7 +10,13 @@ app.post('/', (req, res)=> {
     res.status(201).send('creando chanchito')
 }) 
 
+app.get('/:id', (req, res) =>{
+    console.log(req)
+    res.status(200).send(req.params)
+})
+
 app.put('/:id', (req, res) =>{
+    console.log(req)
     res.sendStatus(204)
 })
 
