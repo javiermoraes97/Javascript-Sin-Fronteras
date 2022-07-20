@@ -9,10 +9,13 @@ Es una base de datos orientados a documentos que son objetos json que son muy si
 
 - Usar schemas nos ayuda a trabajar perfectamenta con mongo db
 
-- Libreria a instalar es mongus
+- Libreria a instalar es mongoos
 
 ## Alternativas de MongoDB
 
 - Community Server
 - Enterprise Server
 - Atlas
+
+### Informacion de la coneccion de mongo db
+- /" mongodb+srv://javimo:<password>@moworl.ua2zk.mongodb.net/?retryWrites=true&w=majority "
