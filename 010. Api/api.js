@@ -1,7 +1,12 @@
 const express = require ('express')
+const mongoose = require('mongoose')
 const user = require('./user.controller')
 const app = express()
 const port = 3000
+
+
+app.use(express.json())
+mongoose.connect('mongodb+srv://javimo:javiMO97@moworl.ua2zk.mongodb.net/miapp?retryWrites=true&w=majority')
 
 app.get('/', user.list)
 app.post('/', user.create) 
@@ -31,3 +36,5 @@ app.listen(port, () => {
 // Refactorizar los end points la forma mas facil es crear modulos con un nuevo archivo
 
 // Capturar todas las peticiones
+
+// Middleware
